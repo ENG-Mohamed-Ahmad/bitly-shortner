@@ -1,0 +1,31 @@
+{
+    "name": "mohamed/bitly-shortner",
+    "description": "Shorten long url using bitly api",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Mohamed\\BitlyShortner\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Mohamed\\BityShortner\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ],
+        "extra": {
+            "laravel": {
+                "providers": [
+                    "Mohamed\\BityShortner\\BitlyServiceProvider"
+                ],
+                "aliases": {
+                    "Bitly": "Mohamed\\BityShortner\\Facade"
+                }
+            }
+        }
+    }
+}
