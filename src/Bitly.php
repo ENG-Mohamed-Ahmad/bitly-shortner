@@ -1,15 +1,17 @@
 <?php
-namespace Mohamed\BityShortner;
+namespace Mohamed\BitlyShortner;
 
 class Bitly
 {
 
     public static function shortner($long_link = ''){
+        
+        $token = env('BITLY_TOKEN');
 
         if (empty($long_link)) {
             throw new \Exception('Please Provide Long Link');
         }
-        config('bitlyconfig.token')
+        config('bitlyconfig.token');
         if (is_null($token == getBitlyToken())) {
             
             throw new \Exception('Please Provide Token in bitlyconfig.php file');
