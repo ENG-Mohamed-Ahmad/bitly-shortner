@@ -1,6 +1,6 @@
 <?php
 
-namespace Mohamed\BityShortner;
+namespace Mohamed\BitlyShortner;
 
 use Carbon\Laravel\ServiceProvider;
 
