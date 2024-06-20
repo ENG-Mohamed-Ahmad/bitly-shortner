@@ -1,5 +1,5 @@
 {
-    "name": "mohamed/bitly-shortner",
+    "name": "eng-mohamed-ahmad/bitly-shortner",
     "description": "Shorten long url using bitly api",
     "type": "library",
     "license": "MIT",
