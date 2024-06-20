@@ -9,7 +9,7 @@ class Bitly
         if (empty($long_link)) {
             throw new \Exception('Please Provide Long Link');
         }
-        config('bitlyconfig.token')
+        config('bitlyconfig.token');
         if (is_null($token == getBitlyToken())) {
             
             throw new \Exception('Please Provide Token in bitlyconfig.php file');
